@@ -1,0 +1,137 @@
+/* Web Fonts ----------------------- */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+header{
+  background: url("../img/mountains.jpg") rgb(209, 111, 50);
+  background-blend-mode: multiply;
+  width:100%;
+  height: 90vh;
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 400px;
+
+}
+header, h1{
+  text-align: center;
+  margin: auto;
+  color: aliceblue;
+  display: block;
+  
+}
+.intro{
+  color: rgb(88, 79, 79);
+  margin: auto;
+  display: block;
+  text-align: left;
+}
+section{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: dashed 2px gray ;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+.callout{
+  text-decoration: none;
+  background: linear-gradient(0.25turn, #d3a870, #d4971c, #f0c394);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  margin: auto;
+  display: inline-block;
+  margin-top: 50px;
+  
+}
+html {
+  font-size: 1.25em; /* 20px on most screens */
+}
+img {
+  width: 100%;
+  
+}
+
+#top h1{
+  margin-top: 40px ;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+#wildlife{
+  background: url("../img/bear.jpg") beige;
+  background-blend-mode: multiply;
+  width:100%;
+  height: 90vh;
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 300px;
+  color: azure;
+  text-align: left;
+  padding-left: 100px ;
+  text-decoration: none;
+  border-top: 8px solid orange;
+  box-shadow: inset 15px 15px 15px black, inset -15px -15px 15px black ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: orange;
+}
+.column{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  text-align: left;
+  position: relative;
+}
+.column:first-child{
+  margin-right: 4.5% ;
+}
+.column p {
+  color: gray;
+}
+.column ol li {
+  color: gray;
+}
+.main-footer {
+  text-align: center;
+}
+@font-face {
+  font-family: "goyfont";
+  src: url("../fonts/abolition-regular-webfont.woff") format('woff');
+}
+h1{
+  font-family: "goyfont";
+  letter-spacing: 2px;
+}
+body{
+  font-family: "Work sans";
+}
+h1::after{
+  content:"\2193";
+  display: block;
+  margin-top: 100px;
+}
+section img{
+  border-radius: 10px;
+}
+.column:last-child:hover::after{
+  content: "save";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: #be7515;
+  color: antiquewhite;
+}
